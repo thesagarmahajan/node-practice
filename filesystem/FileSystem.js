@@ -1,19 +1,19 @@
 let fs = require("fs")
 
 // Read files
-/* fs.readFile("FileToRead.txt","utf8",(error, data)=>{
+fs.readFile("FileToRead.txt","utf8",(error, data)=>{
     console.log(data)
-}) */
+})
 
 // Write, Update into files
 
-/* fs.writeFile("FileToWrite.txt", "Content inside FileToWrite.txt", (error)=>{
+fs.writeFile("FileToWrite.txt", "Content inside FileToWrite.txt", (error)=>{
     error ? console.log(error) : console.log("writeFile operation completed")
-}) */
+})
 
-/* fs.appendFile("FileToWrite.txt", "\nAppended Line", (error)=>{
+fs.appendFile("FileToWrite.txt", "\nAppended Line", (error)=>{
     error ? console.log(error) : console.log("appendFile operation completed")
-}) */
+})
 
 // Delete files
 fs.unlink("FileToDelete.txt", (error)=>{
